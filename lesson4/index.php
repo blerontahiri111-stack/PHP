@@ -1,4 +1,4 @@
-<!-- <?php
+ <?php
 // \\$color = "Yellow";
 
 // \\switch ($color) {
@@ -76,6 +76,7 @@
 
 
 
+
 ?>
 
- -->
+ 
