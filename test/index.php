@@ -77,12 +77,15 @@ echo $studenti["mosha"];
 
 <?php
 
-$sports = array(
+
     "sport1" => "football",
     "sport2" => "basketball",
     "sport3" => "handball"
-);
+);$sports = array(
 
 echo $sports["sport3"];
 
 ?>
+
+<?php
+
