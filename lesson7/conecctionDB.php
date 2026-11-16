@@ -1,4 +1,3 @@
-
 <?php
 
 $host = "localhost";
@@ -10,7 +9,7 @@ try {
 
     $conn = new PDO("mysql:host=$host;dbname=$DBname", $user, $pass);
 
-    echo "Connected";
+    echo "Connected Successfully";
 
 } catch (Exception $e) {
 
