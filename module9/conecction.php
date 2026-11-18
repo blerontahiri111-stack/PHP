@@ -9,7 +9,7 @@ try {
 
     $conn = new PDO("mysql:host=$host;dbname=$DBname", $user, $pass);
 
-    echo "Connected Successfully";
+    echo "Connected";
 
 } catch (Exception $e) {
 

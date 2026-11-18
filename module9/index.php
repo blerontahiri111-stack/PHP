@@ -2,10 +2,12 @@
 
 include_once ('conecction.php');
 
-if(isset($_POST['username'],$_POST['password'])){
-    $username=$_POST['username'];
+if(isset($_POST['email'],$_POST['password'])){
+    $email=$_POST['email'];
     $password=$_POST['password'];
 
+    echo "Email: " . $email . "<br>";
+    echo "Password: " . $password;
 }
 
 
@@ -14,26 +16,25 @@ if(isset($_POST['username'],$_POST['password'])){
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 9</title>
+    <title>MODULE 9</title>
 </head>
 <body>
 
-    <form method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username">
+   <form method="post" action="add.php">
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
+    <label>Email:</label>
+    <input type="email" name="email">
 
+    <label>Password:</label>
+    <input type="password" name="password">
 
-        <input type="submit" value="Submit">
-    </form>
+    <input type="submit" name="submit" value="Submit">
 
+</form>
 </body>
 </html>
